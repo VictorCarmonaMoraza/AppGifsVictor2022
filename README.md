@@ -1,5 +1,7 @@
-# 2 - Diseño de la pagina inicial 
+# 3 -  Modulo Shared (Modulo nuevo)
 
-Se hace un diseño de la pagina principal que mas tarde se ira modificando para mostrar un contenido mas atractivo.
+Quitamos codigo del app.component.html y lo llevamos a otro componente que estara en otro modulo diferente.
+
+El otro modulo creado es shared.module.ts
 
 
