@@ -7,7 +7,7 @@
     <h3 class="colorTexto">Gifs-App-Victor</h3>
     <hr class="text-white" />
     <div class="list-group list-reset">
-      <a *ngFor="let elemento of listado" href="#" class="list-group-item list-group-item-action">{{elemento | titlecase}}</a>
+      <a *ngFor="let elemento of listado" href="#" class="list-group-item list-group-item-action" (click)="buscar(elemento)">{{elemento | titlecase}}</a>
     </div>
   </div>
   <!--End Sidebar-->

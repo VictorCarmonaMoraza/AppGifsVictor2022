@@ -1,5 +1,5 @@
-# 10 - Cargar imagenes automaticamente
+# 11 - Obtener imagenes desde el sidebar
 
-Cuando recargabamos no venias los gifs y para recargalo hemos hecho los mismo que en la clase anterior
+Hacemos que cuando se haga click se recupere informacion de las anteriores busquedas
 
 
