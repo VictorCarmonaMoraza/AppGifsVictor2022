@@ -1,5 +1,3 @@
-# 4 -  Modularizacion del proyecto
-
-Creamos mas modulos para trabajar de manera mas organizada
+# 5 - ViewChild -Obtener referenecias de elementos del html
 
 
