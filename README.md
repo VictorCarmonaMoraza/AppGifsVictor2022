@@ -1,3 +1,3 @@
-# 6 -Servicio y hacer una peticion HTTP
+# 7 - Mostrar resultados en pantalla
 
 
