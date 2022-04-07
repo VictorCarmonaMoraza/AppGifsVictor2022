@@ -1,11 +1,5 @@
-# 9 - LocalStorage
+# 10 - Cargar imagenes automaticamente
 
--Hacemos que podamos recuperar informacion del localstorage mediante:
-
-localStorage.getItem('historial')
-
--Seteamos la informacion del localstorage
-
-localStorage.setItem('historial', JSON.stringify(this._historial));
+Cuando recargabamos no venias los gifs y para recargalo hemos hecho los mismo que en la clase anterior
 
 
