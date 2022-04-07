@@ -1,3 +1,3 @@
-# 5 - ViewChild -Obtener referenecias de elementos del html
+# 6 -Servicio y hacer una peticion HTTP
 
 
