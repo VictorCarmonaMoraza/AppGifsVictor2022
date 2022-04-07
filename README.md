@@ -1,7 +1,5 @@
-# 3 -  Modulo Shared (Modulo nuevo)
+# 4 -  Modularizacion del proyecto
 
-Quitamos codigo del app.component.html y lo llevamos a otro componente que estara en otro modulo diferente.
-
-El otro modulo creado es shared.module.ts
+Creamos mas modulos para trabajar de manera mas organizada
 
 
