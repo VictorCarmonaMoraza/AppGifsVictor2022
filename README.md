@@ -1,3 +1,3 @@
-# 7 - Mostrar resultados en pantalla
+# 8 - Colocando tipado a las peticiones http
 
 
