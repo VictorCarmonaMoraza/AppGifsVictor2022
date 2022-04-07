@@ -1,6 +1,7 @@
 import { Gif, SearchGifsResponse } from './../interfaces/gifs.interface';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 
 @Injectable({
@@ -14,7 +15,16 @@ export class GifsService {
 
   public resultados: Gif[] = [];
 
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) {
+    //Recuperar informacion del localStorage
+    if (localStorage.getItem('historial')) {
+      //Convertimos el string devuelta a su original que era un array de string
+      this._historial = JSON.parse(localStorage.getItem('historial')!) ;
+    }
+
+    //Otra forma
+    //this._historial = JSON.parse(localStorage.getItem('historial')!) || [];
+  }
 
   get historial() {
     return [...this._historial];
@@ -35,6 +45,11 @@ export class GifsService {
 
       //deja introducir pero corta 10
       this._historial = this._historial.splice(0, 10);
+
+      //JSON.stringify(this._historial)  -->Coje cualquier objeto y lo transforma a string
+
+      //Grabar en el localStorage
+      localStorage.setItem('historial', JSON.stringify(this._historial));
     }
 
     //LlAmado al api
