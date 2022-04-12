@@ -62,13 +62,13 @@ export class GifsService {
     //Parametros
     const params = new HttpParams()
       .set('api_key', this.apikey)
-      .set('limit', '10')
+      .set('limit', '30')
       .set('q', query);
 
     //LlAmado al api
     this.http.get<SearchGifsResponse>(`${this.servicioUrl}/search`,{params})
       .subscribe((resp )=> {
-        console.log(resp.data);
+        //console.log(resp.data);
         this.resultados = resp.data;
         localStorage.setItem('resultados', JSON.stringify(this.resultados));
     })

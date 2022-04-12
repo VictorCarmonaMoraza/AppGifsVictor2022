@@ -1,16 +1,17 @@
 #sidebar
 {
   height: 100%;
-  width: 230px;
+  width: 180px;
   min-height:100vh;
-background-color: #229954;
+background-color: #BDB76B;
 }
 
 .list-group-item{
-  color: red;
-  background-color: #AAB7B8;
+  color: blue;
+  background-color: #FF7F50;
   border-color: blue;
   border: 0,5px;
+  margin: 2px
 }
 
 .colorTexto{

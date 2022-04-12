@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  visible: boolean = false;
 
 
   constructor(private gifsService:GifsService) { }
@@ -15,7 +16,10 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  get listado():string[] {
+  get listado(): string[] {
+    if (this.gifsService.historial != null) {
+      this.visible = true;
+    }
     return this.gifsService.historial;
   }
 
